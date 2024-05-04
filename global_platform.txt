@@ -1,0 +1,27 @@
+Gemini Global Platform:
+
+To establish Gemini as a global platform, we identified the problems with the existing workflow and resolved them one by one.
+1. Migration of Gemini to PostgreSQL and Off Hazelcast to Ensure:
+2. The shipment object is not locked by a single user.
+3. Concurrent users can work on the same shipment.
+4. Bulk updates can be performed.
+
+Each country has its own set of rules and additional data. To support every country, we developed an Excel-based metamodel where we defined all the attributes and database details. we consume the Metamodel and created a Data Access Layer 
+GEMINI's Data Access Layer (DAL). DAL helps access and update GEMINI business data in a way that it is easy to manage global, regional, and country-specific details in a universal, and language-agnostic manner so that data can be treated consistently across Java code, business rules, and JavaScript runtimes.
+
+
+Roles and Responsibilities:
+
+1. Developed custom queries to interact with the Data Access Layer (DAL).
+2. Constructed major components within the DAL, including the query parser, query builder, runner, and hydrator for query fetch operations.
+3. Formulated the logic for Data Manipulation Language (DML) operations.
+4. Developed a Command-Line Interface (CLI) to interact with the DAL.
+5. Enhanced the DAL to validate the MetaModel Excel.
+6. Expanded the DAL to support bulk update operations.
+7. Successfully integrated consumer services with DAL using FeignClient.
+8. Created a utility to convert Excel into Data Definition Language (DDL) scripts.
+9. Developed a utility for synthetic data generation (faker data for performance testing).
+10. Participated in the implementation process of materialized views and control tables.
+11. Enhanced the DAL to support the GCC platform.
+12. Acquired proficiency in Azure deployment and monitoring using Azure CLI.
+13. Gained substantial knowledge of PostgreSQL and the pgAdmin management tool.
